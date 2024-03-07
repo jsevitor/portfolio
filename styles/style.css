@@ -82,7 +82,6 @@ ul li {
     font-size: 1.2rem;
 }
 
-
 .container__header a:hover {
     color: var(--light);
     cursor: pointer;
