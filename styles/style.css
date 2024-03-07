@@ -70,6 +70,17 @@ ul li {
 
 .container__header .nav__menu {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem 1rem ;
+    padding: 3rem 1rem 1rem 1rem;
+    flex-direction: column;
+    width: calc(100% - 2rem);
+    justify-content: center;
+    gap: 1.5rem;
+    
+    background-color: var(--primary);
 }
 
 .container__header .container__main {
