@@ -6,6 +6,129 @@
     --light: #FFFCF2;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: var(--dark);
+}
+
 body {
     background-color: var(--light);
+}
+
+a {
+    text-decoration: none; 
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 326px;
+}
+
+.container {
+    /* padding: 0.5rem 1rem; */
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--medium);
+    border: 1px solid var(--primary);
+    border-radius: 3.125rem ;
+    padding: 1rem 2rem;
+    margin: 0.5rem 1rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary);
+
+}
+
+.nav__menu {
+    display: none;
+}
+
+.container__main {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing__page,
+.projects__page,
+.contact__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 4rem 1rem;
+
+    border: 1px solid red;
+}
+.landing__page .title {
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: right;
+    margin: 8rem 0;
+}
+.landing__page .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    font-size: 1rem;
+    margin: 4rem 0;
+}
+.landing__page .description>p {
+    font-weight: 600;
+}
+.landing__page .description>span {
+    text-align: center;
+}
+.description .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary);
+}
+.icons .icon > a {
+    color: var(--primary);
+}
+
+
+/* ABOUT PAGE */
+.about__page {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    padding: 1rem;
+    background-color: var(--medium);
+}
+
+.about__page > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--primary);
+}
+
+.about__page .profile_img > img {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.about__page .about_content {
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
