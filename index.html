@@ -26,7 +26,9 @@
         <li><a href="#projects">projetos</a></li>
         <li><a href="#contact">contato</a></li>
       </ul>
-      <div class="theme__icon"></div>
+      <div class="theme__icon">
+        <i class="fa-solid fa-sun"></i>
+      </div>
       <a href="javascript:void(0)" class="menu_icon" onclick="switchMenu()">
         <i class="fa-solid fa-bars"></i>
       </a>
@@ -34,11 +36,11 @@
     <main class="container__main">
       <section class="landing__page">
         <div class="title">
-          <h1>Olá,<br />sou <i>Voliverx</i></h1>
+          <h1>Olá,<br />sou <span><i>Voliverx</i></span></h1>
         </div>
         <div class="description">
           <p>
-            Sou um entusiasta de frontend em constante busca por soluções
+            Sou um entusiasta de <span>frontend</span> em constante busca por soluções
             inovadoras para desafios do dia a dia.
           </p>
 
@@ -64,29 +66,30 @@
 
       <section class="about__page" id="about">
         <h2 class="page_title">Sobre</h2>
-        <div class="profile_img">
-          <img
-            src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg"
-            alt="" />
-        </div>
-        <div class="about_content">
-          <p>
-            Sou Vitor Oliveira, um estudante de Análise e Desenvolvimento de
-            Sistemas e apaixonado pelo desenvolvimento frontend. Isso me
-            impulsiona a buscar por soluções inovadoras, combinando
-            habilidades técnicas e criativas em cada projeto em que me
-            envolvo. Estou dedicado a buscar desafios que ampliem meu
-            horizonte profissional e me permitam crescer continuamente. Além
-            disso, estou sempre em busca de aprendizado contínuo, me
-            atualizando com as últimas tendências e tecnologias em
-            desenvolvimento web.
-          </p>
-
-          <p>
-            Este portfólio é uma representação do meu trabalho. Espero que
-            você aprecie o que encontrar aqui e que possamos ter a
-            oportunidade de colaborar em projetos futuros.
-          </p>
+        <div class="about_elements">
+          <div class="profile_img">
+            <img
+              src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg"
+              alt="" />
+          </div>
+          <div class="about_content">
+            <p>
+              Sou Vitor Oliveira, um estudante de Análise e Desenvolvimento de
+              Sistemas e apaixonado pelo desenvolvimento frontend. Isso me
+              impulsiona a buscar por soluções inovadoras, combinando
+              habilidades técnicas e criativas em cada projeto em que me
+              envolvo. Estou dedicado a buscar desafios que ampliem meu
+              horizonte profissional e me permitam crescer continuamente. Além
+              disso, estou sempre em busca de aprendizado contínuo, me
+              atualizando com as últimas tendências e tecnologias em
+              desenvolvimento web.
+            </p>
+            <p>
+              Este portfólio é uma representação do meu trabalho. Espero que
+              você aprecie o que encontrar aqui e que possamos ter a
+              oportunidade de colaborar em projetos futuros.
+            </p>
+          </div>
         </div>
         <div class="container__skills">
           <h3>Tech Skills</h3>
@@ -135,7 +138,7 @@
         </ul>
 
         <ul class="container__projects">
-          <li class="project">
+          <li class="project reverse" >
             <div class="project_img">
               <img
                 src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg"
@@ -147,7 +150,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vivamus bibendum convallis ex sit amet ultricies.
               </p>
-              <ul>
+              <ul class="tools tools_reverse">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -179,7 +182,7 @@
         </ul>
 
         <ul class="container__projects">
-          <li class="project">
+          <li class="project reverse">
             <div class="project_img">
               <img
                 src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg"
@@ -191,7 +194,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vivamus bibendum convallis ex sit amet ultricies.
               </p>
-              <ul>
+              <ul class="tools tools_reverse">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
