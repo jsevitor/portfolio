@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+}
+
+i {
+    color: $primary-normal;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $primary-normal;
+    border-radius: 3.125rem;
+}
+
+.header-logo {
+    color: $primary-normal;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-menu {
+    display: flex;
+    gap: 2rem;
+
+    a {
+        color: $primary-normal;
+        font-weight: 500;
+    }
+}
+
+.header-menu a:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: $secondary-light;
+}
+
+.menu-icon {
+    display: none;
+}
+
