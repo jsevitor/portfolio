@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    padding: .5rem 2rem;
 }
 
 i {
@@ -10,6 +11,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: .5rem 2rem;
     border: 1px solid $primary-normal;
     border-radius: 3.125rem;
 }
@@ -39,3 +41,16 @@ i {
     display: none;
 }
 
+@media screen and (max-width: 768px) {
+    
+    .header-content {
+        width: 100%;
+    }
+    .header-menu,
+    .theme-icon {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}

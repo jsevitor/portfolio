@@ -1,5 +1,151 @@
-.container{
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 8px;
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $secondary-light;
+
+  span {
+    color: $primary-normal;
+    font-style: italic;
   }
+
+  h1 {
+    font-size: 6rem;
+    text-align: right;
+    padding-top: 6rem;
+  }
+
+  p {
+    margin: 8rem 0;
+    font-size: 1.5rem;
+    font-size: 600;
+  }
+}
+
+.hero .icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.icons .icon a:hover{
+  i{
+    animation: translateY 0.8s infinite alternate;
+    color: $secondary-light;
+  }
+}
+
+@keyframes translateY {
+  from{
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+
+/* ABOUT */
+.about {
+  background-color: $primary-light;
+}
+.about-content {
+  padding: 2rem 0;
+
+  h2 {
+    color: $secondary-light;
+    font-style: italic;
+  }
+}
+
+.about-person {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  div {
+    flex: 1;
+  }
+
+  img {
+    border-radius: 1.2rem;
+  }
+
+  p {
+    line-height: 150%;
+  }
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: $primary-normal;
+
+  h3 {
+    font-size: .825rem;
+    padding: 1rem;
+  }
+}
+
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid $primary-normal;
+  border-bottom: 1px solid $primary-normal;
+
+  li {
+    width: 30%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem 2rem;
+    gap: 2rem;
+    background-color: $primary-normal;
+    border-radius: .5rem;
+    color: $secondary-light;
+  }
+
+  i, svg {
+    font-size: 1.8rem;
+    color: $secondary-light;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero {    
+    height: 91vh;
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .about-content {
+    h2 {
+      padding: 0 2rem 2rem 2rem;
+    }
+  }
+  .about-person {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+}
