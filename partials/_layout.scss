@@ -18,34 +18,37 @@
   h1 {
     font-size: 6rem;
     text-align: right;
-    padding-top: 6rem;
+    padding-top: 12rem;
   }
 
   p {
-    margin: 8rem 0;
+    padding: 6rem 0;
     font-size: 1.5rem;
-    font-size: 600;
+    font-weight: 500;
+    width: 60%;
   }
 }
 
 .hero .icons {
   display: flex;
   gap: 1rem;
+  padding: 2rem;
   font-size: 2rem;
   justify-content: center;
 }
 
-.icons .icon a:hover{
-  i{
+.icons .icon a:hover {
+  i {
     animation: translateY 0.8s infinite alternate;
     color: $secondary-light;
   }
 }
 
 @keyframes translateY {
-  from{
+  from {
     transform: translateY(0) scale(1);
   }
+
   to {
     transform: translateY(-8px) scale(1.1);
   }
@@ -56,6 +59,7 @@
 .about {
   background-color: $primary-light;
 }
+
 .about-content {
   padding: 2rem 0;
 
@@ -67,10 +71,11 @@
 
 .about-person {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   padding: 2rem 0;
+
   div {
     flex: 1;
   }
@@ -119,23 +124,165 @@
     color: $secondary-light;
   }
 
-  i, svg {
+  i,
+  svg {
     font-size: 1.8rem;
     color: $secondary-light;
   }
 }
 
+/* PROJECTS */
+.projects-content {
+  padding: 2rem 0;
 
+  h2 {
+    color: $secondary-light;
+    font-style: italic;
+    padding-bottom: 2rem;
+  }
+}
+
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  display: flex;
+  border: 1px solid $primary-normal;
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  background-color: rgb(236, 225, 193, 0.3);
+
+  img {
+    border-radius: 1.5rem;
+    height: 100%;
+  }
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+
+  h4 {
+    color: $primary-normal;
+  }
+
+  ul {
+    color: $primary-normal;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* CONTACT */
+.contact {
+  background-color: $primary-light;
+  padding: 2rem 0;
+
+  h2 {
+    color: $secondary-light;
+    font-style: italic;
+    padding-bottom: 2rem;
+  }
+}
+
+.contact-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+
+  h3 {
+    font-size: 0.825rem;
+    color: $secondary-light;
+    padding: 1rem;
+  }
+
+  input {
+    width: 60%;
+    padding: .825rem;
+    border: none;
+    border-radius: .3rem;
+  }
+
+  .mensage {
+    height: 8rem;
+  }
+}
+
+.send-btn {
+  background-color: $primary-normal;
+  padding: .5rem;
+  width: 10%;
+  border-radius: .3rem;
+  color: $primary-light;
+}
+
+.send-btn:hover {
+  background-color: $secondary-medium;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: $primary-normal;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    color: $primary-light;
+    font-size: 0.925rem;
+  }
+}
+
+.social-medias {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    color: $secondary-medium;
+  }
+
+  i,
+  svg {
+    color: $secondary-medium;
+    font-size: 1.5rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
-  .hero {    
+  .hero {
     height: 91vh;
+
     h1 {
       font-size: 3.5rem;
     }
-  
+
     p {
       font-size: 1.1rem;
+      width: 100%;
     }
   }
 
@@ -144,8 +291,77 @@
       padding: 0 2rem 2rem 2rem;
     }
   }
+
   .about-person {
     flex-direction: column;
     padding: 0 2rem;
+  }
+
+  .skills_list {
+
+    li {
+      width: 40%;
+      font-size: .825rem;
+      padding: .5rem 1rem;
+      gap: .5rem;
+    }
+
+    i,
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+
+  .projects-content {
+    padding: 2rem;
+  }
+
+  .project {
+    flex-direction: column;
+
+    background-color: rgb(236, 225, 193, 0.3);
+
+    img {
+      border-radius: 1.5rem;
+      height: 100%;
+    }
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+
+  .contact-forms {
+    input {
+      width: 100%;
+      padding: .825rem;
+      border: none;
+      border-radius: .3rem;
+    }
+  }
+
+  .send-btn {
+    width: 30%;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  .social-medias {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    i,
+    svg {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 389px) {
+
+  html {
+    font-size: 80%;
   }
 }
