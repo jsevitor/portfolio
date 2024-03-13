@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "Raleway", sans-serif;
+    color: $secondary-light;
+}
+
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $gray-light;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
