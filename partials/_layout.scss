@@ -58,10 +58,14 @@
 /* ABOUT */
 .about {
   background-color: $primary-light;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-content {
-  padding: 2rem 0;
+  padding: 2rem 0;  
 
   h2 {
     color: $secondary-light;
@@ -189,6 +193,7 @@
 .contact {
   background-color: $primary-light;
   padding: 2rem 0;
+  height: 80vh;
 
   h2 {
     color: $secondary-light;
@@ -201,7 +206,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
+  gap: .825rem;
+  padding: 4rem 0;
 
   h3 {
     font-size: 0.825rem;
@@ -217,7 +223,7 @@
   }
 
   .mensage {
-    height: 8rem;
+    height: 10rem;
   }
 }
 
@@ -237,7 +243,8 @@
 /* FOOTER */
 footer {
   background-color: $primary-normal;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
+  height: 20vh;
 }
 
 .footer-content {
@@ -254,7 +261,7 @@ footer {
 .social-medias {
   display: flex;
   gap: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 
   li {
     display: flex;
@@ -286,6 +293,9 @@ footer {
     }
   }
 
+  .about {
+    height: auto;
+  }
   .about-content {
     h2 {
       padding: 0 2rem 2rem 2rem;
@@ -329,6 +339,7 @@ footer {
 
   .contact {
     padding: 2rem;
+    height: auto;
   }
 
   .contact-forms {
