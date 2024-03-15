@@ -52,8 +52,17 @@ i {
 @media screen and (max-width: 768px) {
   .header-content {
     width: 100%;
+    position: relative;
   }
-  .header-menu,
+  .header-menu {
+    display: block;
+    background-color: #ECE1C1;
+    width: 88%;
+    padding: 1rem;
+    position: absolute;
+    top: 46px;
+    left: 22px;
+  }
   .theme-icon {
     display: none;
   }
@@ -346,6 +355,9 @@ footer {
   .skills_list i,
   .skills_list svg {
     font-size: 1.2rem;
+  }
+  .project {
+    height: 100%;
   }
   .projects-content {
     padding: 2rem;

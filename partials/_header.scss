@@ -46,8 +46,19 @@ i {
     
     .header-content {
         width: 100%;
+        position: relative;
     }
-    .header-menu,
+    .header-menu {
+        display: block;
+        background-color: $primary-light;
+        width: 88%;
+        padding: 1rem;
+        
+        position: absolute;
+        top: 46px;
+        left: 22px;
+
+    }
     .theme-icon {
         display: none;
     }
