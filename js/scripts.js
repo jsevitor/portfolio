@@ -1,9 +1,30 @@
-function switchMenu() {
-    let nav_menu = document.getElementById("nav_menu");
+let menu = document.getElementById("menu");
+let headerMenu = document.getElementById("header-menu");
+let itemMenu = document.querySelectorAll(".item-menu");
+let hero = document.querySelector(".hero");
 
-    if (nav_menu.style.display == "flex") {
-        nav_menu.style.display = "none";
+
+menu.addEventListener('click', () => {
+    
+    if (headerMenu.style.display == "flex") {
+        headerMenu.style.display = "none";
+        menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
     } else {
-        nav_menu.style.display = "flex";
+        headerMenu.style.display = "flex";
+        menu.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
     }
-}
+})
+
+hero.addEventListener('click', () => {
+    headerMenu.style.display = "none";
+    menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+})
+
+itemMenu.forEach(item => {
+    item.addEventListener('click', () => {
+        headerMenu.style.display = "none";
+        menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+    });
+});
+
+

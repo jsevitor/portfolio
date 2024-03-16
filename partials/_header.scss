@@ -49,20 +49,25 @@ i {
         position: relative;
     }
     .header-menu {
-        display: block;
-        background-color: $primary-light;
-        width: 88%;
-        padding: 1rem;
-        
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 2rem;
         position: absolute;
-        top: 46px;
-        left: 22px;
-
+        top: 103%;
+        left: 0;
+        background-color: $primary-light;
+        border-radius: 1rem;
+        z-index: 1;
     }
     .theme-icon {
         display: none;
     }
     .menu-icon {
         display: block;
+    }
+
+    .menu-icon>i:hover {
+        color: $secondary-medium;
     }
 }

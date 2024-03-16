@@ -32,15 +32,19 @@
   <header>
     <nav class="header-content container">
       <div class="header-logo">VX.</div>
-      <ul class="header-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">sobre</a></li>
-        <li><a href="#projects">projetos</a></li>
-        <li><a href="#contact">contato</a></li>
+      <ul class="header-menu" id="header-menu">
+        <li class="item-menu"><a href="#home">home</a></li>
+        <li class="item-menu"><a href="#about">sobre</a></li>
+        <li class="item-menu"><a href="#projects">projetos</a></li>
+        <li class="item-menu"><a href="#contact">contato</a></li>
       </ul>
       <div class="header-icons">
         <button class="theme-icon"><i class="fa-solid fa-sun"></i></button>
-        <a href="javascript:void(0)" class="menu-icon" onclick="switchMenu()">
+        <a 
+          href="javascript:void(0)" 
+          class="menu-icon" 
+          id="menu" 
+        >
           <i class="fa-solid fa-bars"></i>
         </a>
       </div>
