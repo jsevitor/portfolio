@@ -9,8 +9,7 @@
   flex-direction: column;
   justify-content: space-around;
   color: $secondary-light;
-  height: 100%;
-
+  height: calc(100% - 48px);
 
   span {
     color: $primary-normal;
@@ -23,7 +22,6 @@
   }
 
   p {
-    // padding: 6rem 0;
     font-size: 1.5rem;
     font-weight: 500;
     width: 60%;
@@ -33,7 +31,6 @@
 .hero .icons {
   display: flex;
   gap: 1rem;
-  padding: 2rem;
   font-size: 2rem;
   justify-content: center;
 }

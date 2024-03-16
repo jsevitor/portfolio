@@ -81,7 +81,7 @@ i {
   flex-direction: column;
   justify-content: space-around;
   color: #444444;
-  height: 100%;
+  height: calc(100% - 48px);
 }
 .hero span {
   color: #E0B535;
@@ -100,7 +100,6 @@ i {
 .hero .icons {
   display: flex;
   gap: 1rem;
-  padding: 2rem;
   font-size: 2rem;
   justify-content: center;
 }
