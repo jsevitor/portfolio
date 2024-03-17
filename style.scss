@@ -19,6 +19,12 @@ body {
     height: 100vh;
     position: relative;
     background-color: $gray-light;
+    color: $secondary-medium;
+
+    &.dark-mode {
+        background-color: $secondary-light;
+        color: $primary-light;
+    }
 }
 
 button {
@@ -37,4 +43,12 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+.section-bg {
+    background-color: $primary-light;
+
+    &.dark-bg {
+        background-color: $secondary-normal;
+    }
 }

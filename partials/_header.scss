@@ -4,6 +4,10 @@ header {
     padding: .5rem 2rem;
 }
 
+button {
+    background: none;
+}
+
 i {
     color: $primary-normal;
 }
@@ -29,17 +33,23 @@ i {
 
     a {
         color: $primary-normal;
+        font-size: 1.2rem;
         font-weight: 500;
     }
 }
 
 .header-menu a:hover {
-    animation: translateY 0.8s infinite alternate;
-    color: $secondary-light;
+    color: $primary-medium;
 }
 
 .menu-icon {
     display: none;
+}
+
+.theme-icon {
+    i {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -62,6 +72,9 @@ i {
     }
     .theme-icon {
         display: none;
+        position: absolute;
+        top: 140%;
+        z-index: 10;
     }
     .menu-icon {
         display: block;

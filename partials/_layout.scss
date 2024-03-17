@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: $secondary-light;
   height: calc(100% - 48px);
 
   span {
@@ -38,7 +37,7 @@
 .icons .icon a:hover {
   i {
     animation: translateY 0.8s infinite alternate;
-    color: $secondary-light;
+    color: $primary-medium;
   }
 }
 
@@ -55,7 +54,6 @@
 
 /* ABOUT */
 .about {
-  background-color: $primary-light;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +63,6 @@
   padding: 2rem 0;  
 
   h2 {
-    color: $secondary-light;
     font-style: italic;
   }
 }
@@ -137,7 +134,6 @@
   padding: 2rem 0;
 
   h2 {
-    color: $secondary-light;
     font-style: italic;
     padding-bottom: 2rem;
   }
@@ -194,12 +190,9 @@
 
 /* CONTACT */
 .contact {
-  background-color: $primary-light;
   padding: 2rem 0;
-  height: 100%;
 
   h2 {
-    color: $secondary-light;
     font-style: italic;
     padding-bottom: 2rem;
   }
@@ -213,7 +206,6 @@
 
   h3 {
     font-size: 0.825rem;
-    color: $secondary-light;
     padding: 1rem;
   }
 
@@ -246,7 +238,6 @@
 footer {
   background-color: $primary-normal;
   padding: 2rem 0 1rem;
-  height: 100%;
 }
 
 .footer-content {
