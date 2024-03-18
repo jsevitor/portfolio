@@ -183,6 +183,23 @@
   }
 }
 
+.actions-btn {
+  padding-top: 1rem;
+  font-size: .825rem;
+  a {
+    background-color: $primary-normal;
+    color: $secondary-light;
+    padding: .25rem .5rem;
+    margin-right: .5rem;
+    border-radius: .25rem;
+  }
+}
+
+.actions-btn > a:hover {
+  background-color: $primary-light;
+  color: $primary-normal;
+}
+
 .reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -273,14 +290,28 @@ footer {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  html {
+    font-size: 90%;
+  }
   .container {
     padding: 0.5rem 2rem;
   }
   .about, .projects {
     padding: 1.5rem 0;
   }
+  .project-description {
+    ul {
+      gap: .5rem;
+      font-size: .825rem;
+    }
+  }
+  
 }
+
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
   .hero {
     height: 91vh;
 

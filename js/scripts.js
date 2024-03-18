@@ -55,7 +55,7 @@ function setLightMode() {
 themeBtn.addEventListener('click', toggleTheme);
 
 menu.addEventListener('click', () => {
-    
+
     if (headerMenu.style.display == "flex") {
         headerMenu.style.display = "none";
         menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
@@ -75,8 +75,12 @@ hero.addEventListener('click', () => {
 
 itemMenu.forEach(item => {
     item.addEventListener('click', () => {
-        headerMenu.style.display = "none";
-        themeBtn.style.display = "none";
-        menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        if (window.innerWidth <= 768) {
+            headerMenu.style.display = "none";
+            themeBtn.style.display = "none";
+            menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        } else {
+            headerMenu.style.display = "flex";
+        }
     });
 });
