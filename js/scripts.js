@@ -1,4 +1,6 @@
-const screen = window.innerWidth;
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+const isLightMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+
 let menu = document.getElementById("menu");
 let headerMenu = document.getElementById("header-menu");
 let itemMenu = document.querySelectorAll(".item-menu");
@@ -8,33 +10,49 @@ let themeBtn = document.querySelector(".theme-icon");
 let body = document.querySelector("body");
 let sectionBg = document.querySelectorAll(".section-bg");
 
-themeBtn.addEventListener('click', () => {
+if (isDarkMode) {
+    setDarkMode();
+} else {
+    setLightMode();
+}
+
+function toggleTheme() {
     if (themeBtn.value == "1") {
-        themeBtn.value = "-1";
-        themeBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
-        body.classList.toggle("dark-mode");
-
-        sectionBg.forEach(item => {
-            item.classList.toggle("dark-bg");
-        })
-
-        if (screen <= 768) {
-            headerMenu.style.backgroundColor = "#242424";
-        }
+        setDarkMode();
     } else {
-        themeBtn.value = "1";
-        themeBtn.innerHTML = `<i class="fa-solid fa-moon"></i>`; 
-        body.classList.remove("dark-mode");
-
-        sectionBg.forEach(item => {
-            item.classList.remove("dark-bg");
-        })
-
-        if (screen <= 768) {
-            headerMenu.style.backgroundColor = "#ECE1C1";
-        }
+        setLightMode();
     }
-})
+}
+
+function setDarkMode() {
+    themeBtn.value = "-1";
+    themeBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+    body.classList.add("dark-mode");
+
+    sectionBg.forEach(item => {
+        item.classList.add("dark-bg");
+    });
+
+    if (window.innerWidth <= 768) {
+        headerMenu.style.backgroundColor = "#242424";
+    }
+}
+
+function setLightMode() {
+    themeBtn.value = "1";
+    themeBtn.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+    body.classList.remove("dark-mode");
+
+    sectionBg.forEach(item => {
+        item.classList.remove("dark-bg");
+    });
+
+    if (window.innerWidth <= 768) {
+        headerMenu.style.backgroundColor = "#ECE1C1";
+    }
+}
+
+themeBtn.addEventListener('click', toggleTheme);
 
 menu.addEventListener('click', () => {
     
@@ -62,5 +80,3 @@ itemMenu.forEach(item => {
         menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
     });
 });
-
-
