@@ -1,324 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- BIBLIOTECA ANIMAÇÕES AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- BIBLIOTECA ANIMAÇÕES AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- FONTES -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-  rel="stylesheet" />
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ICONES FONT AWNSOME -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- ICONES FONT AWNSOME -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
 
-  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <title>Portifólio</title>
-</head>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
 
-<body>
+    <title>Portifólio</title>
+  </head>
 
-
-  <!-- HEADER -->
-  <header>
-    <nav class="header-content container">
-      <div class="header-logo">VX.</div>
-      <ul class="header-menu" id="header-menu">
-        <li class="item-menu"><a href="#home">home</a></li>
-        <li class="item-menu"><a href="#about">sobre</a></li>
-        <li class="item-menu"><a href="#projects">projetos</a></li>
-        <li class="item-menu"><a href="#contact">contato</a></li>
-      </ul>
-      <div class="header-icons">
-        <button class="theme-icon" value="1"><i class="fa-solid fa-moon"></i></button>
-        <a 
-          href="javascript:void(0)" 
-          class="menu-icon" 
-          id="menu" 
-        >
-          <i class="fa-solid fa-bars"></i>
-        </a>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="header-content container">
+          <div class="logo">
+            <img src="./assets/logo-white.svg" alt="" />
+          </div>
+          <nav>
+            <ul class="menu" id="header-menu">
+              <li class="menu-item"><a href="#home">home</a></li>
+              <li class="menu-item"><a href="#about">sobre</a></li>
+              <li class="menu-item"><a href="#projects">projetos</a></li>
+              <li class="menu-item"><a href="#contact">contato</a></li>
+              <li class="btn-theme">
+                <button class="theme-icon" value="1">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
+              <li class="btn-menu">
+                <a href="javascript:void(0)" class="menu-icon" id="menu">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </nav>
+    </header>
 
-    <main class="hero container">
-      <h1 data-aos="fade-left" data-aos-delay="200">Olá,<br />sou <span>Voliverx</span></h1>
+    <!-- MAIN -->
+    <main class="container">
+      <!-- HERO -->
+      <section class="hero-container">
+        <div class="hero-content">
+          <h1 data-aos="fade-left" data-aos-delay="200">VITOR OLIVEIRA</h1>
+          <h2 data-aos="fade-left" data-aos-delay="200">PORTFÓLIO</h2>
+          <p data-aos="fade-right" data-aos-delay="300">
+            Desenvolvedor Frontend
+          </p>
+          <button>Fale comigo</button>
+        </div>
+      </section>
 
-      <p data-aos="fade-right" data-aos-delay="300">
-        Sou um entusiasta de <span>frontend</span> em constante busca por soluções
-        inovadoras para desafios do dia a dia.
-      </p>
-
-      <ul class="icons">
-        <li class="icon">
-          <a href="https://github.com/jsevitor" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="icon">
-          <a href="https://linkedin.com/in/josevitoroliveira" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <!-- <li class="icon">
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-        </li> -->
-      </ul>
+      <!-- ABOUT -->
+      <section class="about-container" id="about">
+        <h2>SOBRE</h2>
+        <div class="about-content">
+          <div class="about-img" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/profile-pic.png" alt="Foto perfil" />
+          </div>
+          <div class="about-text" data-aos="zoom-in" data-aos-delay="250">
+            <p>
+              Sou Vitor Oliveira, estudante de Análise e Desenvolvimento de
+              Sistemas e apaixonado pelo desenvolvimento frontend. Isso me
+              impulsiona a buscar por soluções inovadoras, combinando
+              habilidades técnicas e criativas em cada projeto em que me
+              envolvo. Estou dedicado a buscar desafios que ampliem meu
+              horizonte profissional e me permitam crescer continuamente.
+            </p>
+            <br />
+            <p>
+              Estou sempre em busca de aprendizado contínuo, me atualizando com
+              as últimas tendências e tecnologias em desenvolvimento web. Espero
+              que você aprecie o que encontrar aqui e que possamos ter a
+              oportunidade de colaborar em projetos futuros.
+            </p>
+            <button>Currículo</button>
+          </div>
+        </div>
+      </section>
     </main>
-  </header>
 
-  <!-- ABOUT -->
-  <section class="about section-bg" id="about">
-    <div class="container about-content">
-      <h2>Sobre</h2>
-      <div class="about-person">
-        <div data-aos="zoom-in" data-aos-delay="100">
-          <img
-            src="assets/profile-pic.png"
-            alt="Foto perfil" />
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="250">
-          <p>
-            Sou Vitor Oliveira, estudante de Análise e Desenvolvimento de
-            Sistemas e apaixonado pelo desenvolvimento frontend. Isso me
-            impulsiona a buscar por soluções inovadoras, combinando
-            habilidades técnicas e criativas em cada projeto em que me
-            envolvo. Estou dedicado a buscar desafios que ampliem meu
-            horizonte profissional e me permitam crescer continuamente.
-          </p>
-          <br/>
-          <p>
-            Estou sempre em busca de aprendizado contínuo, me
-            atualizando com as últimas tendências e tecnologias em
-            desenvolvimento web. Espero que você aprecie o que encontrar aqui e que possamos ter a oportunidade de colaborar em projetos futuros.
-          </p>
-        </div>
-      </div>
-
-      <div class="about-skills">
-        <h3>Tech Skills</h3>
-        <ul class="skills_list">
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-html5"></i> HTML</li>
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-css3-alt"></i> CSS</li>
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-js"></i> JavaScript</li>
-          <li class="skill" 
-              data-aos="zoom-in"
-              data-aos-delay="250"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
-              <path fill="currentColor"
-                d="M0 16v16h32V0H0zm25.786-1.276a4.023 4.023 0 0 1 2.005 1.156c.292.312.729.885.766 1.026c.01.042-1.38.974-2.224 1.495c-.031.021-.156-.109-.292-.313c-.411-.599-.844-.859-1.505-.906c-.969-.063-1.594.443-1.589 1.292a1.26 1.26 0 0 0 .135.599c.214.443.615.708 1.854 1.245c2.292.984 3.271 1.635 3.88 2.557c.682 1.031.833 2.677.375 3.906c-.51 1.328-1.771 2.234-3.542 2.531c-.547.099-1.849.083-2.438-.026c-1.286-.229-2.505-.865-3.255-1.698c-.297-.323-.87-1.172-.833-1.229c.016-.021.146-.104.292-.188l1.188-.688l.922-.536l.193.286c.271.411.859.974 1.214 1.161c1.021.542 2.422.464 3.115-.156c.281-.234.438-.594.417-.958c0-.37-.047-.536-.24-.813c-.25-.354-.755-.656-2.198-1.281c-1.651-.714-2.365-1.151-3.01-1.854a4.236 4.236 0 0 1-.88-1.599c-.12-.453-.151-1.589-.057-2.042c.339-1.599 1.547-2.708 3.281-3.036c.563-.109 1.875-.068 2.427.068zm-7.51 1.339l.01 1.307h-4.167v11.839h-2.948V17.37H7.01v-1.281c0-.714.016-1.307.036-1.323c.016-.021 2.547-.031 5.62-.026l5.594.016z" />
-            </svg> TypeScript</li>
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-react"></i> React</li>
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-angular"></i> Angular</li>
-          <li class="skill" 
-              data-aos="zoom-in"
-              data-aos-delay="250"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" />
-            </svg>Tailwind</li>
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-figma"></i> Figma</li>
-          <li class="skill" 
-              data-aos="zoom-in" 
-              data-aos-delay="250"
-            >
-              <i class="fa-brands fa-git-alt"></i> Git</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="container projects-content">
-      <h2>Projetos</h2>
-      <ul class="projects-box">
-        <li class="project" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="500">
-          <div>
-            <img
-              src="assets/explorefy.png"
-              alt="" />
-          </div>
-          <div class="project-description">
-            <h4>SPOTIFY EXLPORER</h4>
-            <p>
-              Desenvolvida em React integrada à API do Spotify. Permite buscar artistas, exibindo resultados como sua descrição, seus álbuns com foto e artistas relacionados. Ao selecionar um álbum, suas informações são exibidas, assim como, prévia das músicas. Interface intuitiva e funcional para explorar artistas no Spotify.
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>|</li>
-              <li>CSS</li>
-              <li>|</li>
-              <li>JavaScript</li>
-              <li>|</li>
-              <li>React</li>
-              <li>|</li>
-              <li>API Rest</li>
-            </ul>
-            <div class="actions-btn">
-              <a href="https://github.com/jsevitor/spotify-api" target="_blank">Repositório</a>
-              <a href="https://explorerspotify.netlify.app" target="_blank">Acessar</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="project reverse" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="500">
-          <div>
-            <img
-              src="assets/pokedex.png"
-              alt="" />
-          </div>
-          <div class="project-description reverse-desc">
-            <h4>POKEDEX</h4>
-            <p>
-              Desafio proposto pela Digital Innovation One (DIO) para desenvolvimento de uma aplicação da Pokédex utilizando a API PokeAPI. Permite aos usuários pesquisar e explorar informações sobre Pokémon, incluindo habilidades, tipos e estatísticas. Interface simples, intuitiva e informativa para fãs da franquia.
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>|</li>
-              <li>CSS</li>
-              <li>|</li>
-              <li>JavaScript</li>
-              <li>|</li>
-              <li>API Rest</li>
-            </ul>
-            <div class="actions-btn">
-              <a href="https://github.com/jsevitor/pokedex-dio" target="_blank">Repositório</a>
-              <a href="https://jsevitor.github.io/pokedex-dio" target="_blank">Acessar</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="project" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="500">
-          <div>
-            <img
-              src="assets/wiki-mundo.png"
-              alt="" />
-          </div>
-          <div class="project-description">
-            <h4>WIKI MUNDO</h4>
-            <p>
-              Aplicação WEB que utiliza a API do site restcountries.com. Os usuários podem selecionar um país em uma lista suspensa e ver informações detalhadas, incluindo bandeira, capital, continente, população e mais. Também é possível explorar países vizinhos diretamente. 
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>|</li>
-              <li>CSS</li>
-              <li>|</li>
-              <li>JavaScript</li>
-              <li>|</li>
-              <li>API Rest</li>
-            </ul>
-            <div class="actions-btn">
-              <a href="https://github.com/jsevitor/wiki-mundo" target="_blank">Repositório</a>
-              <a href="https://jsevitor.github.io/wiki-mundo/" target="_blank">Acessar</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="project reverse" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="500">
-          <div>
-            <img
-              src="assets/age-calculator.png"
-              alt="" />
-          </div>
-          <div class="project-description reverse-desc">
-            <h4>AGE CALCULATOR</h4>
-            <p>
-              Desenvolvi um aplicativo que permite aos usuários inserir uma data válida e visualizar a idade em anos, meses e dias. Ele valida entradas, exibindo erros para campos vazios, datas futuras ou inválidas. A interface é responsiva e inclui animações para uma experiência interativa.
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>|</li>
-              <li>CSS</li>
-              <li>|</li>
-              <li>JavaScript</li>
-            </ul>
-            <div class="actions-btn">
-              <a href="https://github.com/jsevitor/age-calculator" target="_blank">Repositório</a>
-              <a href="https://jsevitor.github.io/age-calculator" target="_blank">Acessar</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact section-bg" id="contact">
-    <div class="contact-content container">
-      <h2>Contato</h2>
-      <div class="contact-forms">
-        <h3>Vamos conversar?</h3>
-        <input type="text" name="name" placeholder="Nome" />
-        <input type="text" name="email" placeholder="Email" />
-        <input type="text" name="mensage" placeholder="Mensagem" class="mensage" />
-        <button class="send-btn">Enviar</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-content container">
-      <ul class="social-medias">
-        <li><a href="https://github.com/jsevitor" target="_blank"> <i class="fa-brands fa-github"></i> \jsevitor</a>
-        </li>
-        <li><a href="http://linkedin.com/in/josevitoroliveira" target="_blank"><i class="fa-brands fa-linkedin"></i>
-            \jsevitor</a></li>
-        <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-discord"></i> \jsevitor</a></li> -->
-        <li><a href="https://www.instagram.com/voliverx/" target="_blank"><i class="fa-brands fa-instagram"></i> @voliverx</a></li>
-        <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-square-x-twitter"></i> \jsevitor</a></li> -->
-        <li><a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> \vitorjse@gmail.com</a></li>
-      </ul>
-      <p>Copyright © Vitor Oliveira 2024.</p>
-      <p>Developed by voliverx.dev</p>
-    </div>
-  </footer>
-  </div>
-
-  <!-- SCRIPTS -->
-  <script src="js/animation.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
-
+    <!-- SCRIPTS -->
+    <script src="js/animation.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

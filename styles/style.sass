@@ -1,0 +1,113 @@
+@use './global.sass'
+@use './variables.sass'
+
+
+// HEADER
+.header-container
+    width: 100%
+    height: 5rem
+    background-color: variables.$dark_10
+    border-bottom: 1px solid variables.$dark_50
+
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+
+    
+.header-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    
+    nav, ul
+        display: flex
+        gap: 2rem
+
+        li, a
+            font-weight: 300
+
+            &:hover
+                color: variables.$dark_20
+
+        .btn-theme, i
+            color: variables.$dark_40
+
+            &:hover
+                color: variables.$dark_20
+                cursor: pointer
+
+        .btn-menu
+            display: none
+
+
+// HERO
+.hero-container
+    height: calc( 100vh - 5rem )
+    display: flex
+    align-items: center
+
+.hero-content
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1rem
+    padding: 2rem
+    border: 1px solid variables.$dark_40
+    border-radius: 0.1rem
+
+    h1
+        font-size: 6.25rem
+        font-weight: 500
+
+    h2
+        font-size: 5rem
+        font-weight: 100
+        letter-spacing: 1.5rem
+
+    p
+        font-size: 1.5rem
+
+    button
+        margin-top: 3rem
+        padding: 0.5rem 1rem
+        border: 1px solid variables.$dark_40
+        border-radius: 0.2rem
+        color: variables.$dark_40
+
+        &:hover
+            background-color: variables.$dark_40
+            color: variables.$dark_10
+            cursor: pointer
+            
+
+// ABOUT
+.about-container
+    display: flex
+    flex-direction: column
+    gap: 4rem
+
+    h2
+        padding-left: 2rem
+        font-size: 4rem
+        font-weight: 100
+        border-left: 1px solid variables.$dark_40
+
+.about-content
+    display: flex
+    border: 1px solid red
+    padding: 1rem
+
+    .about-img
+        flex: 1
+
+    .about-text
+        flex: 1
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+   
