@@ -120,6 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  padding-bottom: 4rem;
 }
 .about-container h2 {
   padding-left: 2rem;
@@ -130,15 +131,178 @@ main {
 
 .about-content {
   display: flex;
-  border: 1px solid red;
   padding: 1rem;
 }
 .about-content .about-img {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .about-content .about-text {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2rem;
+}
+.about-content .about-text #city {
+  font-weight: 300;
+}
+.about-content .about-text p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.about-content .about-text button {
+  padding: 0.5rem 1rem;
+  background-color: #EFEFEF;
+  border-radius: 0.2rem;
+  color: #0F0F0F;
+  width: 30%;
+}
+.about-content .about-text button:hover {
+  background-color: #919191;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 0;
+}
+.about-skills h3 {
+  font-weight: 400;
+  text-align: center;
+  color: #919191;
+}
+.about-skills .skill-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid rgba(239, 239, 239, 0.368627451);
+  border-radius: 0.2rem;
+}
+.about-skills .skill-list i {
+  font-size: 4rem;
+  color: #919191;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+.projects-container h2 {
+  padding-left: 2rem;
+  font-size: 4rem;
+  font-weight: 100;
+  border-left: 1px solid #EFEFEF;
+}
+.projects-container .projects-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.projects-container .projects-content .card {
+  display: flex;
+  flex-direction: column;
+}
+.projects-container .projects-content .card .project-img {
+  border-radius: 0.2rem;
+}
+.projects-container .projects-content .card .project-img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 0.2rem;
+}
+.projects-container .projects-content .card .project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.projects-container .projects-content .card .project-description h4 {
+  font-size: 1.5rem;
+}
+.projects-container .projects-content .card .project-description p {
+  line-height: 1.4;
+  font-weight: 300;
+  padding-right: 2rem;
+}
+.projects-container .projects-content .card .project-description ul {
+  display: flex;
+  gap: 1rem;
+}
+.projects-container .projects-content .card .project-description .actions-btn {
+  display: flex;
+  gap: 1rem;
+}
+.projects-container .projects-content .card .project-description .actions-btn button {
+  padding: 0.25rem 1rem;
+  background-color: #EFEFEF;
+  border-radius: 0.2rem;
+}
+.projects-container .projects-content .card .project-description .actions-btn button a {
+  color: #0F0F0F;
+}
+.projects-container .projects-content .card .project-description .actions-btn button:hover {
+  background-color: #919191;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+.projects-container .projects-content .card .project-description .actions-btn .repo {
+  background-color: #0F0F0F;
+  border: 1px solid #EFEFEF;
+}
+.projects-container .projects-content .card .project-description .actions-btn .repo a {
+  color: #EFEFEF;
+}
+.projects-container .projects-content .card .project-description .actions-btn .repo:hover {
+  background-color: #919191;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+.contact-container h2 {
+  padding-left: 2rem;
+  font-size: 4rem;
+  font-weight: 100;
+  border-left: 1px solid #EFEFEF;
+}
+.contact-container .contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.contact-container .contact-content h3 {
+  font-weight: 300;
+}
+.contact-container .contact-content .contact-list {
+  display: flex;
+  gap: 1rem;
+}
+.contact-container .contact-content .contact-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-container .contact-content .contact-list li i {
+  font-size: 2rem;
+}
+.contact-container .contact-content .contact-list li span {
+  font-weight: 200;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

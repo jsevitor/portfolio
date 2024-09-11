@@ -89,6 +89,7 @@
     display: flex
     flex-direction: column
     gap: 4rem
+    padding-bottom: 4rem
 
     h2
         padding-left: 2rem
@@ -98,16 +99,177 @@
 
 .about-content
     display: flex
-    border: 1px solid red
     padding: 1rem
 
     .about-img
         flex: 1
+        display: flex
+        justify-content: center
 
     .about-text
         flex: 1
         display: flex
         flex-direction: column
         justify-content: center
+        gap: 2rem
 
-   
+        #city
+            font-weight: 300
+
+        p
+            font-size: 1.25rem
+            line-height: 1.4
+
+        button
+            padding: 0.5rem 1rem
+            background-color: variables.$dark_40
+            border-radius: 0.2rem
+            color: variables.$dark_10
+            width: 30%
+
+            &:hover
+                background-color: variables.$dark_20
+                color: variables.$dark_10
+                cursor: pointer
+            
+.about-skills
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    padding: 4rem 0
+
+    h3
+        font-weight: 400
+        text-align: center
+        color: variables.$dark_20
+
+    .skill-list
+        display: flex
+        justify-content: space-between
+        padding: 1rem
+        border: 1px solid variables.$dark_50
+        border-radius: 0.2rem
+
+        i
+            font-size: 4rem
+            color: variables.$dark_20
+
+
+// PROJECTS
+.projects-container
+    display: flex
+    flex-direction: column
+    gap: 4rem
+    padding: 4rem 0
+
+    h2
+        padding-left: 2rem
+        font-size: 4rem
+        font-weight: 100
+        border-left: 1px solid variables.$dark_40
+
+    .projects-content
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 2rem
+
+        .card
+            display: flex
+            flex-direction: column
+
+            .project-img
+                border-radius: 0.2rem
+
+                img
+                    width: 100%
+                    height: 200px
+                    object-fit: cover
+                    object-position: top
+                    border-radius: 0.2rem
+
+            .project-description
+                display: flex
+                flex-direction: column
+                gap: 1rem
+
+                h4
+                    font-size: 1.5rem
+
+                p
+                    line-height: 1.4
+                    font-weight: 300
+                    padding-right: 2rem
+
+                ul
+                    display: flex
+                    gap: 1rem
+
+                .actions-btn
+                    display: flex
+                    gap: 1rem
+
+                    button
+                        padding: 0.25rem 1rem
+                        background-color: variables.$dark_40
+                        border-radius: 0.2rem
+                        
+                        a
+                            color: variables.$dark_10
+
+                        &:hover
+                            background-color: variables.$dark_20
+                            color: variables.$dark_10
+                            cursor: pointer
+                            
+
+                    .repo
+                        background-color: variables.$dark_10
+                        border: 1px solid variables.$dark_40
+
+                        a
+                            color: variables.$dark_40
+
+                        &:hover
+                            background-color: variables.$dark_20
+                            color: variables.$dark_10
+                            cursor: pointer
+
+
+// CONTACT
+.contact-container
+    display: flex
+    flex-direction: column
+    gap: 4rem
+    padding: 4rem 0
+
+    h2
+        padding-left: 2rem
+        font-size: 4rem
+        font-weight: 100
+        border-left: 1px solid variables.$dark_40
+
+    .contact-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 2rem
+
+        h3
+            font-weight: 300
+
+        .contact-list
+            display: flex
+            gap: 1rem
+
+            li
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 1rem
+
+                i
+                    font-size: 2rem
+                
+                span
+                    font-weight: 200
+                    font-size: 0.9rem
