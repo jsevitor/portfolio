@@ -120,7 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding-bottom: 4rem;
+  padding: 6rem 0;
 }
 .about-container h2 {
   padding-left: 2rem;
@@ -192,7 +192,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 .projects-container h2 {
   padding-left: 2rem;
@@ -264,6 +264,21 @@ main {
 }
 .projects-container .projects-content .card .project-description .actions-btn .repo:hover {
   background-color: #919191;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+.projects-container .see-more-btn {
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #EFEFEF;
+  border-radius: 0.2rem;
+  color: #EFEFEF;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: center;
+}
+.projects-container .see-more-btn:hover {
+  background-color: #EFEFEF;
   color: #0F0F0F;
   cursor: pointer;
 }

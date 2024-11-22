@@ -36,7 +36,7 @@
 
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
 
-    <title>Portifólio</title>
+    <title>Vitor Oliveira | Portfólio</title>
   </head>
 
   <body>
@@ -70,14 +70,15 @@
     </header>
 
     <!-- MAIN -->
-    <main class="container">
+    <div id="home"></div>
+    <main class="container" >
       <!-- HERO -->
       <section class="hero-container">
         <div class="hero-content">
           <h1 data-aos="fade-left" data-aos-delay="200">VITOR OLIVEIRA</h1>
           <h2 data-aos="fade-left" data-aos-delay="200">PORTFÓLIO</h2>
           <p data-aos="fade-right" data-aos-delay="300">
-            Desenvolvedor Frontend
+            Desenvolvedor Full Stack
           </p>
           <button>Fale comigo</button>
         </div>
@@ -104,10 +105,12 @@
               desenvolvimento web. Espero que você aprecie o que encontrar aqui
               e que possamos colaborar em futuros projetos.
             </p>
-            <button>
-              <span>Currículo</span>
-              <i class="bi bi-arrow-down-circle"></i>
-            </button>
+            <a href="public/Curriculo José Vitor Oliveira Reis.pdf" download="Currículo Vitor Oliveira.pdf">
+              <button>
+                <span>Currículo</span>
+                <i class="bi bi-arrow-down-circle"></i>
+              </button>
+            </a>
           </div>
         </div>
 
@@ -127,7 +130,7 @@
       </section>
 
       <!-- PROJECTS -->
-      <section class="projects-container">
+      <section class="projects-container" id="projects">
         <h2>PROJETOS</h2>
         <ul class="projects-content">
           <li class="card">
@@ -258,10 +261,12 @@
             </div>
           </li>
         </ul>
+
+        <butto class="see-more-btn">Ver mais</button>
       </section>
 
       <!-- CONTATCT -->
-      <section class="contact-container">
+      <section class="contact-container" id="contact">
         <h2>CONTATO</h2>
         <div class="contact-content">
           <h3>Onde me encontrar?</h3>
