@@ -4,11 +4,13 @@
   box-sizing: border-box;
   font-family: "Lexend", sans-serif;
   font-size: 16px;
+  background: none;
 }
 
 body {
   background-color: #0F0F0F;
   color: #EFEFEF;
+  padding: 0 2rem;
 }
 
 a {
@@ -46,31 +48,23 @@ main {
   left: 0;
   z-index: 999;
 }
-
-.header-content {
+.header-container .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-.header-content nav, .header-content ul {
+.header-container .header-content nav, .header-container .header-content ul {
   display: flex;
   gap: 2rem;
 }
-.header-content nav li, .header-content nav a, .header-content ul li, .header-content ul a {
+.header-container .header-content nav li, .header-container .header-content nav a, .header-container .header-content ul li, .header-container .header-content ul a {
   font-weight: 300;
 }
-.header-content nav li:hover, .header-content nav a:hover, .header-content ul li:hover, .header-content ul a:hover {
+.header-container .header-content nav li:hover, .header-container .header-content nav a:hover, .header-container .header-content ul li:hover, .header-container .header-content ul a:hover {
   color: #919191;
 }
-.header-content nav .btn-theme, .header-content nav i, .header-content ul .btn-theme, .header-content ul i {
-  color: #EFEFEF;
-}
-.header-content nav .btn-theme:hover, .header-content nav i:hover, .header-content ul .btn-theme:hover, .header-content ul i:hover {
-  color: #919191;
-  cursor: pointer;
-}
-.header-content nav .btn-menu, .header-content ul .btn-menu {
+.header-container .header-content nav .btn-menu, .header-container .header-content ul .btn-menu {
   display: none;
 }
 
@@ -79,8 +73,7 @@ main {
   display: flex;
   align-items: center;
 }
-
-.hero-content {
+.hero-container .hero-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -91,26 +84,27 @@ main {
   border: 1px solid #EFEFEF;
   border-radius: 0.1rem;
 }
-.hero-content h1 {
+.hero-container .hero-content h1 {
   font-size: 6.25rem;
   font-weight: 500;
+  text-align: center;
 }
-.hero-content h2 {
+.hero-container .hero-content h2 {
   font-size: 5rem;
   font-weight: 100;
   letter-spacing: 1.5rem;
 }
-.hero-content p {
+.hero-container .hero-content p {
   font-size: 1.5rem;
 }
-.hero-content button {
+.hero-container .hero-content button {
   margin-top: 3rem;
   padding: 0.5rem 1rem;
   border: 1px solid #EFEFEF;
   border-radius: 0.2rem;
   color: #EFEFEF;
 }
-.hero-content button:hover {
+.hero-container .hero-content button:hover {
   background-color: #EFEFEF;
   color: #0F0F0F;
   cursor: pointer;
@@ -128,64 +122,68 @@ main {
   font-weight: 100;
   border-left: 1px solid #EFEFEF;
 }
-
-.about-content {
+.about-container .about-content {
   display: flex;
   padding: 1rem;
 }
-.about-content .about-img {
+.about-container .about-content .about-img {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-.about-content .about-text {
+.about-container .about-content .about-text {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }
-.about-content .about-text #city {
+.about-container .about-content .about-text #city {
   font-weight: 300;
 }
-.about-content .about-text p {
+.about-container .about-content .about-text p {
   font-size: 1.25rem;
   line-height: 1.4;
 }
-.about-content .about-text button {
+.about-container .about-content .about-text button {
   padding: 0.5rem 1rem;
   background-color: #EFEFEF;
   border-radius: 0.2rem;
   color: #0F0F0F;
   width: 30%;
 }
-.about-content .about-text button:hover {
+.about-container .about-content .about-text button:hover {
   background-color: #919191;
   color: #0F0F0F;
   cursor: pointer;
 }
-
-.about-skills {
+.about-container .about-skills {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 4rem 0;
 }
-.about-skills h3 {
+.about-container .about-skills h3 {
   font-weight: 400;
   text-align: center;
   color: #919191;
 }
-.about-skills .skill-list {
+.about-container .about-skills .skill-list {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   border: 1px solid rgba(239, 239, 239, 0.368627451);
   border-radius: 0.2rem;
 }
-.about-skills .skill-list i {
-  font-size: 4rem;
+.about-container .about-skills .skill-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   color: #919191;
+}
+.about-container .about-skills .skill-list li i {
+  font-size: 4rem;
 }
 
 .projects-container {
@@ -224,7 +222,6 @@ main {
 .projects-container .projects-content .card .project-description {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 .projects-container .projects-content .card .project-description h4 {
   font-size: 1.5rem;
@@ -236,7 +233,10 @@ main {
 }
 .projects-container .projects-content .card .project-description ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+  font-weight: 200;
 }
 .projects-container .projects-content .card .project-description .actions-btn {
   display: flex;
@@ -331,4 +331,165 @@ footer .attribution {
 footer .attribution a {
   font-size: 12px;
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  html {
+    font-size: 95%;
+  }
+  body {
+    padding: 0 2rem;
+  }
+  .about-container h2,
+  .projects-container h2,
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+  .header-container {
+    padding: 0 2rem;
+  }
+  .header-container .menu {
+    display: flex;
+  }
+  .header-container .btn-menu {
+    display: none;
+  }
+  .about-container {
+    padding: 0;
+  }
+  .about-content img {
+    width: 300px;
+  }
+  .about-content .about-text p {
+    font-size: 1rem;
+  }
+  .about-content .about-text button {
+    width: 60%;
+  }
+  .projects-container .projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .projects-container .projects-content .project-description h4 {
+    font-size: 1rem;
+  }
+  .projects-container .projects-content .project-description ul {
+    flex-wrap: wrap;
+  }
+  .projects-container .projects-content .project-description ul li {
+    font-size: 0.825rem;
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+  .header-container {
+    padding: 1rem 2rem;
+  }
+  .header-container .logo, .header-container img {
+    height: 40px;
+  }
+  .header-container .menu {
+    display: none;
+  }
+  .header-container .header-content nav .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0F0F0F;
+    border: 1px solid #EFEFEF;
+    border-radius: 0.2rem;
+    z-index: 1;
+  }
+  .header-container .header-content nav .menu_btns, .header-container .header-content nav .btn-menu {
+    display: block;
+  }
+  .hero-container {
+    padding: 0 1rem;
+  }
+  .hero-container .hero-content {
+    gap: 6rem;
+    padding: 4rem 1rem;
+  }
+  .hero-container .hero-content h1 {
+    font-size: 4.5rem;
+  }
+  .hero-container .hero-content h2 {
+    font-size: 2.8rem;
+    letter-spacing: 0.8rem;
+  }
+  .hero-container .hero-content p {
+    font-size: 1rem;
+  }
+  .about-container {
+    padding: 4rem 0;
+  }
+  .about-container h2 {
+    font-size: 2.5rem;
+  }
+  .about-container .about-content {
+    flex-direction: column;
+  }
+  .about-container .about-content .about-img {
+    margin-bottom: 4rem;
+  }
+  .about-container .about-content .about-text p {
+    font-size: 1rem;
+  }
+  .about-container .about-content .about-text button {
+    width: 45%;
+  }
+  .about-container .about-skills {
+    padding: 1rem;
+  }
+  .about-container .about-skills .skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    list-style: none;
+    padding: 2rem 0;
+  }
+  .about-container .about-skills .skill-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .projects-container {
+    padding: 6rem 0;
+  }
+  .projects-container h2 {
+    font-size: 2.5rem;
+  }
+  .projects-container .projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .projects-container .projects-content .project-description h4 {
+    font-size: 1rem;
+  }
+  .projects-container .projects-content .project-description ul, .projects-container .projects-content .project-description li {
+    font-size: 0.875rem;
+  }
+  .contact-container {
+    padding: 4rem 0;
+  }
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+  .contact-container .contact-content .contact-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 2rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
