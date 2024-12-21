@@ -212,7 +212,8 @@ main {
 }
 .projects-container .projects-content .card .project-img img {
   width: 100%;
-  height: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
