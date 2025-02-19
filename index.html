@@ -15,11 +15,12 @@
       rel="stylesheet"
     />
 
-    <!-- ICONES FONT AWNSOME -->
+    <!-- ICONES -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js">
 
     <link
       rel="stylesheet"
@@ -34,7 +35,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/logo-white.svg" type="image/x-icon" />
 
     <title>Vitor Oliveira | Portfólio</title>
   </head>
@@ -51,7 +52,8 @@
             <ul class="menu" id="header-menu">
               <li class="menu-item"><a href="#home">home</a></li>
               <li class="menu-item"><a href="#about">sobre</a></li>
-              <li class="menu-item"><a href="./pages/projects.html">projetos</a></li>
+              <li class="menu-item"><a href="#projects">projetos</a></li>
+              <!-- <li class="menu-item"><a href="./pages/projects.html">projetos</a></li> -->
               <li class="menu-item"><a href="#contact">contato</a></li>
               <!-- <li class="btn-theme">
                 <button class="theme-icon" value="1">
@@ -82,7 +84,7 @@
           <p data-aos="fade-right" data-aos-delay="300">
             Desenvolvedor Full Stack
           </p>
-          <button>Fale comigo</button>
+          <a href="https://www.linkedin.com/in/josevitoroliveira/" target="_blank"><button>Fale comigo</button></a>
         </div>
       </section>
 
@@ -91,7 +93,9 @@
         <h2>SOBRE</h2>
         <div class="about-content">
           <div class="about-img" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/profile-pic.svg" alt="Foto perfil" />
+            <span>
+              <img src="assets/me.jpeg" alt="Foto perfil" />
+            </span>
           </div>
           <div class="about-text" data-aos="zoom-in" data-aos-delay="250">
             <p id="city">
@@ -99,17 +103,11 @@
               <span>Ituiutaba-MG</span>
             </p>
             <p>
-              Sou Vitor Oliveira, estudante de Análise e Desenvolvimento de
-              Sistemas e entusiasta do desenvolvimento frontend. Estou sempre em
-              busca de soluções inovadoras e criativas para cada projeto em que
-              me envolvo. Possuo compromisso constante com o aprendizado e a
-              atualização nas últimas tendências e tecnologias em
-              desenvolvimento web. Espero que você aprecie o que encontrar aqui
-              e que possamos colaborar em futuros projetos.
+              Sou José Vitor Oliveira, ou apenas Vitor, graduando em Análise e Desenvolvimento de Sistemas com foco em desenvolvimento Full Stack. Busco integrar soluções tanto no front-end quanto no back-end, criando projetos completos e eficientes. Estou em constante atualização nas últimas tendências e tecnologias em desenvolvimento web e tenho compromisso com o aprendizado contínuo. Espero que o conteúdo aqui seja útil e que possamos colaborar em futuros projetos.
             </p>
             <a
-              href="public/Curriculo José Vitor Oliveira Reis.pdf"
-              download="Currículo Vitor Oliveira.pdf"
+              href="public/Currículo José Vitor Oliveira Reis.pdf"
+              download="Currículo José Vitor Oliveira.pdf"
             >
               <button>
                 <span>Currículo</span>
@@ -122,7 +120,7 @@
         <div class="about-skills">
           <h3>HABILIDADES</h3>
           <ul class="skill-list">
-            <li class="skill">
+            <li class="skill" id="html">
               <i class="fa-brands fa-html5"></i>
               <p>HTML</p>
             </li>
@@ -137,6 +135,10 @@
             <li class="skill">
               <i class="fa-brands fa-react"></i>
               <p>React</p>
+            </li>
+            <li class="skill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 15 15"><path fill="currentColor" d="m4.5 4.5l.405-.293A.5.5 0 0 0 4 4.5zm3 9.5A6.5 6.5 0 0 1 1 7.5H0A7.5 7.5 0 0 0 7.5 15zM14 7.5A6.5 6.5 0 0 1 7.5 14v1A7.5 7.5 0 0 0 15 7.5zM7.5 1A6.5 6.5 0 0 1 14 7.5h1A7.5 7.5 0 0 0 7.5 0zm0-1A7.5 7.5 0 0 0 0 7.5h1A6.5 6.5 0 0 1 7.5 1zM5 12V4.5H4V12zm-.905-7.207l6.5 9l.81-.586l-6.5-9zM10 4v6h1V4z"/></svg>
+              <p>Next.js</p>
             </li>
             <li class="skill">
               <i class="fa-brands fa-sass"></i>
@@ -179,7 +181,7 @@
                 <li>|</li>
                 <li>Gemini API</li>
                 <li>|</li>
-                <li>SQLite</li>
+                <li>PostgreSQL</li>
               </ul>
               <div class="actions-btn">
                 <button>
@@ -399,9 +401,9 @@
 
       <footer>
         <div class="attribution">
-          © 2024 Voliverx Dev. Todos os direitos reservados.
+          © 2024 PORTFÓLIO. <br> Todos os direitos reservados.
         </div>
-        <div class="attribution">Coded by <a href="#">Vitor Oliveira</a>.</div>
+        <div class="attribution">Desenvolvido por <a href="https://github.com/jsevitor">Vitor Oliveira</a>.</div>
       </footer>
     </main>
 

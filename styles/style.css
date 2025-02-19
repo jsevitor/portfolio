@@ -131,6 +131,14 @@ main {
   display: flex;
   justify-content: center;
 }
+.about-container .about-content .about-img span {
+  width: 380px;
+  height: 380px;
+  border: 1px solid #EFEFEF;
+}
+.about-container .about-content .about-img span img {
+  width: 100%;
+}
 .about-container .about-content .about-text {
   flex: 1;
   display: flex;
@@ -142,8 +150,9 @@ main {
   font-weight: 300;
 }
 .about-container .about-content .about-text p {
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 200;
 }
 .about-container .about-content .about-text button {
   padding: 0.5rem 1rem;
@@ -171,7 +180,7 @@ main {
 .about-container .about-skills .skill-list {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: 1px solid rgba(239, 239, 239, 0.368627451);
   border-radius: 0.2rem;
 }
@@ -331,6 +340,7 @@ footer .attribution {
 
 footer .attribution a {
   font-size: 12px;
+  padding-bottom: 0.5rem;
   color: hsl(228, 45%, 44%);
 }
 

@@ -30,13 +30,6 @@
                 &:hover
                     color: variables.$dark_20
 
-            // .btn-theme, i
-            //     color: variables.$dark_40
-
-            //     &:hover
-            //         color: variables.$dark_20
-            //         cursor: pointer
-
             .btn-menu
                 display: none
 
@@ -106,6 +99,14 @@
             display: flex
             justify-content: center
 
+            span
+                width: 380px
+                height: 380px
+                border: 1px solid variables.$dark_40
+
+                img
+                    width: 100%
+
         .about-text
             flex: 1
             display: flex
@@ -117,8 +118,9 @@
                 font-weight: 300
 
             p
-                font-size: 1.25rem
-                line-height: 1.4
+                font-size: 1.2rem
+                line-height: 1.5
+                font-weight: 200
 
             button
                 padding: 0.5rem 1rem
@@ -146,7 +148,7 @@
         .skill-list
             display: flex
             justify-content: space-between
-            padding: 1rem
+            padding: 1rem 2rem
             border: 1px solid variables.$dark_50
             border-radius: 0.2rem
 
@@ -196,7 +198,7 @@
             .project-description
                 display: flex
                 flex-direction: column
-                // gap: 1rem
+                
 
                 h4
                     font-size: 1.5rem
@@ -305,8 +307,8 @@ footer .attribution
 
 footer .attribution a 
     font-size: 12px 
+    padding-bottom: 0.5rem
     color: hsl(228, 45%, 44%) 
-
 
 @media screen and (min-width: 769px) and (max-width: 1023px)
     html
