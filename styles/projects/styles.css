@@ -1,0 +1,84 @@
+/*
+Error: Invalid CSS after "variables": expected expression (e.g. 1px, bold), was ".$dark_40"
+        on line 49 of styles/projects/styles.sass
+
+44:                 display: flex
+45:                 gap: 1rem
+46: 
+47:                 button
+48:                     padding: 0.25rem 1rem
+49:                     background-color: variables.$dark_40
+50:                     border-radius: 0.2rem
+51:                     
+52:                     a
+53:                         color: variables.$dark_10
+54: 
+
+Backtrace:
+styles/projects/styles.sass:49
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/parser.rb:69:in `parse'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/parser.rb:228:in `parse'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script.rb:27:in `parse'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:1169:in `parse_script'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:745:in `parse_property'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/nix/store/s4cv3sphjwg78fbah3nl6ibd8y5l05vy-ruby3.1-sass-3.7.4/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/nix/store/sg408s5afsr3jgwfclrjqqd5ppwyihr6-ruby3.1-sass-listen-4.0.0/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"variables\": expected expression (e.g. 1px, bold), was \".$dark_40\"\A         on line 49 of styles/projects/styles.sass\A \A 44:                 display: flex\A 45:                 gap: 1rem\A 46: \A 47:                 button\A 48:                     padding: 0.25rem 1rem\A 49:                     background-color: variables.$dark_40\A 50:                     border-radius: 0.2rem\A 51:                     \A 52:                     a\A 53:                         color: variables.$dark_10\A 54: "; }

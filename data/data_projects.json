@@ -1,0 +1,124 @@
+[
+  {
+    "nome": "WHATSAPP WEB CLONE",
+    "texto": "Este projeto é uma replicação da interface do WhatsApp Web, desenvolvida com o objetivo de praticar frontend moderno e componentização.",
+    "techs": {
+      "1": "NEXT.js",
+      "2": "React",
+      "3": "CSS Modules",
+      "4": "Iconify"
+    },
+    "imagem": "clone-wpp.png",
+    "links": {
+      "projeto": "https://wappwebclone.netlify.app/",
+      "repositorio": "https://github.com/jsevitor/nextjs-whatsapp-web-clone"
+    }
+  },
+  {
+    "nome": "SINTIA",
+    "texto": "Aplicação web para analisar contratos utilizando inteligência artificial e extrair informações relevantes e agilizar o processo de gestão de contratos.",
+    "techs": {
+      "1": "NEXT.js",
+      "2": "CSS Modules",
+      "3": "Gemini API",
+      "4": "Bootstrap Icons",
+      "5": "Axios",
+      "6": "PostgreSQL"
+    },
+    "imagem": "sintia-mockup.png",
+    "links": {
+      "projeto": "https://sintia.netlify.app/",
+      "repositorio": "https://github.com/jsevitor/nextjs-sitia-frontend"
+    }
+  },
+  {
+    "nome": "LANDING PAGE - DESAFIO GRANTO SEGUROS",
+    "texto": "Landing Page submetida ao desafio Granto Seguros. Desenvolvida com o intuito de replicar o site da Granto Seguros para apresentar a IA URSULAH como a solução inovadora para simplificar a análise de contratos.",
+    "techs": {
+      "1": "HTML",
+      "2": "CSS",
+      "3": "JavaScript"
+    },
+    "imagem": "landingpage-mockup.png",
+    "links": {
+      "projeto": "https://jsevitor.github.io/landing-page-desafio-granto",
+      "repositorio": "https://github.com/jsevitor/landing-page-desafio-granto"
+    }
+  },
+  {
+    "nome": "FRIOS MORETTI",
+    "texto": "Desenvolvido como parte da disciplina de Projeto Orientado, este projeto é um sistema de controle e gerenciamento de estoque de uma empresa de frios.",
+    "techs": {
+      "1": "React",
+      "2": "Vite",
+      "3": "Styled-Components",
+      "4": "Bootstrap Icons",
+      "5": "Axios",
+      "6": "PostgreSQL"
+    },
+    "imagem": "friosmoretti-mockup.png",
+    "links": {
+      "projeto": "https://friosmoretti.netlify.app/",
+      "repositorio": "https://github.com/jsevitor/react-frios-moretti"
+    }
+  },
+  {
+    "nome": "SPOTIFY EXPLORER",
+    "texto": "Desenvolvido como requisito final da disciplina Programação para Internet II,  este projeto é uma aplicação web que utiliza a API do Spotify para consultar informações sobre artistas, como seus álbuns, músicas populares e artistas relacionados.",
+    "techs": {
+      "1": "React",
+      "2": "Vite",
+      "3": "Tailwind CSS",
+      "4": "API Rest"
+    },
+    "imagem": "spotify-mockup.png",
+    "links": {
+      "projeto": "https://spotify-explorer.netlify.app/",
+      "repositorio": "https://github.com/jsevitor/react-spotify-api"
+    }
+  },
+  {
+    "nome": "POKEDEX",
+    "texto": "Aplicação para consultar e visualizar informações sobre Pokémon, utilizando a API Rest do Pokédex. Este projeto foi desenvolvido durante o Bootcamp Banco Pan – Desenvolvimento Front-End com Angular da plataforma Digital Innovation One (DIO).",
+    "techs": {
+      "1": "HTML",
+      "2": "CSS",
+      "3": "JavaScript",
+      "4": "API Rest"
+    },
+    "imagem": "pokedex-mockup.png",
+    "links": {
+      "projeto": "https://jsevitor.github.io/pokedex-dio/",
+      "repositorio": "https://github.com/jsevitor/pokedex-dio"
+    }
+  },
+  {
+    "nome": "WIKI MUNDO",
+    "texto": "Aplicação que permite buscar informações sobre países, com integração via API Rest para fornecer dados de cada país. Este projeto foi desenvolvido como trabalho da disciplina de Programação para a Internet II.",
+    "techs": {
+      "1": "HTML",
+      "2": "CSS",
+      "3": "JavaScript",
+      "4": "API Rest"
+    },
+    "imagem": "wiki-mundo.png",
+    "links": {
+      "projeto": "https://jsevitor.github.io/js-wiki-mundo/",
+      "repositorio": "https://github.com/jsevitor/js-wiki-mundo"
+    }
+  },
+  {
+    "nome": "AGE CALCULATOR",
+    "texto": "Calculadora de idade em anos, meses e dias, a partir da data de nascimento fornecida pelo usuário.",
+    "techs": {
+      "1": "HTML",
+      "2": "CSS",
+      "3": "JavaScript"
+    },
+    "imagem": "age-calculator.png",
+    "links": {
+      "projeto": "https://jsevitor.github.io/js-age-calculator",
+      "repositorio": "https://github.com/jsevitor/js-age-calculator"
+    }
+  }
+]

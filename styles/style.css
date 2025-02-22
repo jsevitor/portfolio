@@ -131,6 +131,14 @@ main {
   display: flex;
   justify-content: center;
 }
+.about-container .about-content .about-img span {
+  width: 380px;
+  height: 380px;
+  border: 1px solid #EFEFEF;
+}
+.about-container .about-content .about-img span img {
+  width: 100%;
+}
 .about-container .about-content .about-text {
   flex: 1;
   display: flex;
@@ -142,8 +150,9 @@ main {
   font-weight: 300;
 }
 .about-container .about-content .about-text p {
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 200;
 }
 .about-container .about-content .about-text button {
   padding: 0.5rem 1rem;
@@ -171,7 +180,7 @@ main {
 .about-container .about-skills .skill-list {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: 1px solid rgba(239, 239, 239, 0.368627451);
   border-radius: 0.2rem;
 }
@@ -190,7 +199,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .projects-container h2 {
   padding-left: 2rem;
@@ -239,6 +248,9 @@ main {
   margin: 0.5rem 0 1.5rem 0;
   font-weight: 200;
 }
+.projects-container .projects-content .card .project-description ul li {
+  font-size: 0.875rem;
+}
 .projects-container .projects-content .card .project-description .actions-btn {
   display: flex;
   gap: 1rem;
@@ -246,41 +258,45 @@ main {
 .projects-container .projects-content .card .project-description .actions-btn button {
   padding: 0.25rem 1rem;
   background-color: #EFEFEF;
+  border: 1px solid #EFEFEF;
   border-radius: 0.2rem;
-}
-.projects-container .projects-content .card .project-description .actions-btn button a {
   color: #0F0F0F;
 }
 .projects-container .projects-content .card .project-description .actions-btn button:hover {
-  background-color: #919191;
-  color: #0F0F0F;
+  background-color: #0F0F0F;
+  color: #EFEFEF;
   cursor: pointer;
 }
 .projects-container .projects-content .card .project-description .actions-btn .repo {
+  color: #EFEFEF;
   background-color: #0F0F0F;
   border: 1px solid #EFEFEF;
 }
-.projects-container .projects-content .card .project-description .actions-btn .repo a {
-  color: #EFEFEF;
-}
 .projects-container .projects-content .card .project-description .actions-btn .repo:hover {
-  background-color: #919191;
+  background-color: #EFEFEF;
   color: #0F0F0F;
   cursor: pointer;
 }
 .projects-container .see-more-btn {
+  display: flex;
+  justify-content: center;
   margin-top: 3rem;
+}
+.projects-container .see-more-btn button {
   padding: 0.5rem 1rem;
   border: 1px solid #EFEFEF;
   border-radius: 0.2rem;
-  color: #EFEFEF;
+  color: #0F0F0F;
   width: -moz-fit-content;
   width: fit-content;
   justify-self: center;
-}
-.projects-container .see-more-btn:hover {
   background-color: #EFEFEF;
-  color: #0F0F0F;
+}
+.projects-container .see-more-btn button:hover {
+  background-color: #0F0F0F;
+  border: 1px solid #EFEFEF;
+  border-radius: 0.2rem;
+  color: #EFEFEF;
   cursor: pointer;
 }
 
@@ -288,7 +304,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 .contact-container h2 {
   padding-left: 2rem;
@@ -300,25 +317,25 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 .contact-container .contact-content h3 {
   font-weight: 300;
 }
 .contact-container .contact-content .contact-list {
   display: flex;
-  gap: 1rem;
+  gap: 6rem;
 }
-.contact-container .contact-content .contact-list li {
+.contact-container .contact-content .contact-list li a {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.contact-container .contact-content .contact-list li i {
+.contact-container .contact-content .contact-list li a i {
   font-size: 2rem;
 }
-.contact-container .contact-content .contact-list li span {
+.contact-container .contact-content .contact-list li a span {
   font-weight: 200;
   font-size: 0.9rem;
 }
@@ -331,6 +348,7 @@ footer .attribution {
 
 footer .attribution a {
   font-size: 12px;
+  padding-bottom: 0.5rem;
   color: hsl(228, 45%, 44%);
 }
 

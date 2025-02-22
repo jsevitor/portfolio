@@ -1,7 +1,6 @@
 @use './global.sass'
 @use './variables.sass'
 
-
 // HEADER
 .header-container
     width: 100%
@@ -29,13 +28,6 @@
 
                 &:hover
                     color: variables.$dark_20
-
-            // .btn-theme, i
-            //     color: variables.$dark_40
-
-            //     &:hover
-            //         color: variables.$dark_20
-            //         cursor: pointer
 
             .btn-menu
                 display: none
@@ -106,6 +98,14 @@
             display: flex
             justify-content: center
 
+            span
+                width: 380px
+                height: 380px
+                border: 1px solid variables.$dark_40
+
+                img
+                    width: 100%
+
         .about-text
             flex: 1
             display: flex
@@ -117,8 +117,9 @@
                 font-weight: 300
 
             p
-                font-size: 1.25rem
-                line-height: 1.4
+                font-size: 1.2rem
+                line-height: 1.5
+                font-weight: 200
 
             button
                 padding: 0.5rem 1rem
@@ -146,7 +147,7 @@
         .skill-list
             display: flex
             justify-content: space-between
-            padding: 1rem
+            padding: 1rem 2rem
             border: 1px solid variables.$dark_50
             border-radius: 0.2rem
 
@@ -166,7 +167,7 @@
     display: flex
     flex-direction: column
     gap: 4rem
-    padding: 6rem 0
+    padding: 4rem 0
 
     h2
         padding-left: 2rem
@@ -196,7 +197,7 @@
             .project-description
                 display: flex
                 flex-direction: column
-                // gap: 1rem
+                
 
                 h4
                     font-size: 1.5rem
@@ -213,6 +214,9 @@
                     margin: 0.5rem 0 1.5rem 0
                     font-weight: 200
 
+                    li
+                        font-size: 0.875rem
+
                 .actions-btn
                     display: flex
                     gap: 1rem
@@ -220,42 +224,45 @@
                     button
                         padding: 0.25rem 1rem
                         background-color: variables.$dark_40
+                        border: 1px solid variables.$dark_40
                         border-radius: 0.2rem
-                        
-                        a
-                            color: variables.$dark_10
+                        color: variables.$dark_10
 
                         &:hover
-                            background-color: variables.$dark_20
-                            color: variables.$dark_10
+                            background-color: variables.$dark_10
+                            color: variables.$dark_40
                             cursor: pointer
-                            
 
                     .repo
+                        color: variables.$dark_40
                         background-color: variables.$dark_10
                         border: 1px solid variables.$dark_40
 
-                        a
-                            color: variables.$dark_40
-
                         &:hover
-                            background-color: variables.$dark_20
+                            background-color: variables.$dark_40
                             color: variables.$dark_10
                             cursor: pointer
 
     .see-more-btn
+        display: flex
+        justify-content: center
         margin-top: 3rem
-        padding: 0.5rem 1rem
-        border: 1px solid variables.$dark_40
-        border-radius: 0.2rem
-        color: variables.$dark_40
-        width: fit-content
-        justify-self: center
 
-        &:hover
-            background-color: variables.$dark_40
+        button
+            padding: 0.5rem 1rem
+            border: 1px solid variables.$dark_40
+            border-radius: 0.2rem
             color: variables.$dark_10
-            cursor: pointer
+            width: fit-content
+            justify-self: center
+            background-color: variables.$dark_40
+
+            &:hover
+                background-color: variables.$dark_10
+                border: 1px solid variables.$dark_40
+                border-radius: 0.2rem
+                color: variables.$dark_40
+                cursor: pointer
 
 
 // CONTACT
@@ -263,7 +270,8 @@
     display: flex
     flex-direction: column
     gap: 4rem
-    padding: 4rem 0
+    padding-top: 4rem 
+    padding-bottom: 6rem 
 
     h2
         padding-left: 2rem
@@ -275,27 +283,28 @@
         display: flex
         flex-direction: column
         align-items: center
-        gap: 2rem
+        gap: 4rem
 
         h3
             font-weight: 300
 
         .contact-list
             display: flex
-            gap: 1rem
+            gap: 6rem
 
             li
-                display: flex
-                flex-direction: column
-                align-items: center
-                gap: 1rem
+                a
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 1rem
 
-                i
-                    font-size: 2rem
-                
-                span
-                    font-weight: 200
-                    font-size: 0.9rem
+                    i
+                        font-size: 2rem
+                    
+                    span
+                        font-weight: 200
+                        font-size: 0.9rem
 
 
 footer .attribution
@@ -305,8 +314,8 @@ footer .attribution
 
 footer .attribution a 
     font-size: 12px 
+    padding-bottom: 0.5rem
     color: hsl(228, 45%, 44%) 
-
 
 @media screen and (min-width: 769px) and (max-width: 1023px)
     html

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  background: none;
+}
+
+body {
+  background-color: #0F0F0F;
+  color: #EFEFEF;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #EFEFEF;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+main {
+  position: relative;
+  top: 5rem;
+  left: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+.proj-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.proj-content .proj-card {
+  display: flex;
+}
+.proj-content .proj-card .proj-img {
+  border-radius: 0.2rem;
+}
+.proj-content .proj-card .proj-img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 0.2rem;
+}
+.proj-content .proj-card .proj-description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+.proj-content .proj-card .proj-description h4 {
+  font-size: 1.5rem;
+}
+.proj-content .proj-card .proj-description .proj-text {
+  margin: 1rem 0;
+}
+.proj-content .proj-card .proj-description .proj-text p {
+  line-height: 1.4;
+  font-weight: 300;
+  padding-right: 2rem;
+}
+.proj-content .proj-card .proj-description .proj-techs {
+  flex: 1;
+  margin-top: 2rem;
+}
+.proj-content .proj-card .proj-description .proj-techs h5 {
+  font-weight: 400;
+}
+.proj-content .proj-card .proj-description .proj-techs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+  font-weight: 200;
+}
+.proj-content .proj-card .proj-description .actions-btn {
+  display: flex;
+  gap: 1rem;
+}
+.proj-content .proj-card .proj-description .actions-btn button {
+  padding: 0.25rem 1rem;
+  background-color: #EFEFEF;
+  border-radius: 0.2rem;
+}
+.proj-content .proj-card .proj-description .actions-btn button a {
+  color: #0F0F0F;
+}
+.proj-content .proj-card .proj-description .actions-btn button:hover {
+  background-color: #919191;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+.proj-content .proj-card .proj-description .actions-btn .repo {
+  background-color: #0F0F0F;
+  border: 1px solid #EFEFEF;
+}
+.proj-content .proj-card .proj-description .actions-btn .repo a {
+  color: #EFEFEF;
+}
+.proj-content .proj-card .proj-description .actions-btn .repo:hover {
+  background-color: #919191;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+
+.see-more-btn {
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #EFEFEF;
+  border-radius: 0.2rem;
+  color: #EFEFEF;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: center;
+}
+.see-more-btn:hover {
+  background-color: #EFEFEF;
+  color: #0F0F0F;
+  cursor: pointer;
+}/*# sourceMappingURL=projects_styles.css.map */
