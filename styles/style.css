@@ -58,13 +58,32 @@ main {
   display: flex;
   gap: 2rem;
 }
-.header-container .header-content nav li, .header-container .header-content nav a, .header-container .header-content ul li, .header-container .header-content ul a {
-  font-weight: 300;
+.header-container .header-content .menu-item {
+  position: relative;
 }
-.header-container .header-content nav li:hover, .header-container .header-content nav a:hover, .header-container .header-content ul li:hover, .header-container .header-content ul a:hover {
+.header-container .header-content .menu-item a {
+  font-weight: 300;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+.header-container .header-content .menu-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #EFEFEF;
+  transition: width 0.3s ease;
+}
+.header-container .header-content .menu-item a:hover {
   color: #919191;
 }
-.header-container .header-content nav .btn-menu, .header-container .header-content ul .btn-menu {
+.header-container .header-content .menu-item a:hover::after {
+  width: 100%;
+}
+.header-container .header-content .btn-menu {
   display: none;
 }
 

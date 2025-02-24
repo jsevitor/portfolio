@@ -8,7 +8,7 @@
       "3": "CSS Modules",
       "4": "Iconify"
     },
-    "imagem": "clone-wpp.png",
+    "imagem": "wppclone-mockup.png",
     "links": {
       "projeto": "https://wappwebclone.netlify.app/",
       "repositorio": "https://github.com/jsevitor/nextjs-whatsapp-web-clone"
@@ -101,7 +101,7 @@
       "3": "JavaScript",
       "4": "API Rest"
     },
-    "imagem": "wiki-mundo.png",
+    "imagem": "wikimundo-mockup.png",
     "links": {
       "projeto": "https://jsevitor.github.io/js-wiki-mundo/",
       "repositorio": "https://github.com/jsevitor/js-wiki-mundo"
@@ -115,7 +115,7 @@
       "2": "CSS",
       "3": "JavaScript"
     },
-    "imagem": "age-calculator.png",
+    "imagem": "agecalculator-mockup.png",
     "links": {
       "projeto": "https://jsevitor.github.io/js-age-calculator",
       "repositorio": "https://github.com/jsevitor/js-age-calculator"

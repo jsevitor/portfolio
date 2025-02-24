@@ -3,34 +3,53 @@
 
 // HEADER
 .header-container
-    width: 100%
-    height: 5rem
-    background-color: #0F0F0F
-    border-bottom: 1px solid variables.$dark_50
+  width: 100%
+  height: 5rem
+  background-color: #0F0F0F
+  border-bottom: 1px solid variables.$dark-50
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 999
 
-    position: fixed
-    top: 0
-    left: 0
-    z-index: 999
+  .header-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
 
-    .header-content
-        display: flex
-        justify-content: space-between
-        align-items: center
-        height: 100%
-        
-        nav, ul
-            display: flex
-            gap: 2rem
+    nav, ul
+      display: flex
+      gap: 2rem
 
-            li, a
-                font-weight: 300
+    .menu-item
+      position: relative
 
-                &:hover
-                    color: variables.$dark_20
+      a
+        font-weight: 300
+        color: white
+        display: inline-block
+        padding: 0.5rem 0
 
-            .btn-menu
-                display: none
+        &::after
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 0
+          height: 2px
+          background-color: variables.$dark_40
+          transition: width 0.3s ease
+
+        &:hover
+          color: variables.$dark-20
+
+          &::after
+            width: 100% 
+
+    .btn-menu
+      display: none
+
 
 
 // HERO
