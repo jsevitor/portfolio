@@ -51,7 +51,6 @@
       display: none
 
 
-
 // HERO
 .hero-container
     height: calc( 100vh - 5rem )
@@ -152,6 +151,67 @@
                     color: variables.$dark_10
                     cursor: pointer
                 
+    .about-expirience
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        padding: 4rem 0
+
+        h3
+            padding: 1rem
+            font-weight: 400
+            text-align: center
+            color: variables.$dark_20
+
+        .expirience-list
+            display: flex
+            flex-direction: column
+
+            .expirience-item
+                margin: 0 auto
+                display: flex
+                justify-content: space-between
+
+                .date
+                    flex: 1
+                    padding: 0 1rem
+                    display: flex
+                    justify-content: flex-end
+
+                .timeline
+                    width: 4rem
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    
+                    .dot
+                        width: 1rem
+                        height: 1rem
+                        border-radius: 50%
+                        background-color: variables.$dark_20
+
+                    .line
+                        width: 1px
+                        height: 100%
+                        background-color: variables.$dark_20
+
+                .position
+                    flex: 1
+                    padding: 0 1rem 1.5rem
+                    display: flex
+                    flex-direction: column
+                    gap: 0.5rem
+
+                    .position-company
+                        color: variables.$dark_20
+
+                    .position-description
+                        display: flex
+                        flex-direction: column
+                        gap: 0.25rem
+                        font-size: 0.875rem
+                        font-weight: 300
+    
     .about-skills
         display: flex
         flex-direction: column
@@ -363,15 +423,20 @@ footer .attribution a
         padding: 0
 
     .about-content
+        .about-img
+            align-items: center
+
         img
             width: 300px
         
         .about-text 
+            margin-left: 2rem
+
             p
                 font-size: 1rem
 
             button
-                width: 60%
+                width: 50% !important
 
     // PROJECTS
     .projects-container
@@ -391,6 +456,19 @@ footer .attribution a
                         font-size: 0.825rem
                         font-weight: 200
     
+    // CONTACT
+    .contact-container
+        padding: 4rem 0
+
+        h2
+            font-size: 2.5rem
+
+        .contact-content
+            .contact-list
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                column-gap: 4rem
+                row-gap: 2rem
 
 @media screen and (max-width: 768px)
     html
@@ -455,6 +533,13 @@ footer .attribution a
 
             .about-img
                 margin-bottom: 4rem
+
+                span
+                    width: 100%
+                    height: fit-content
+
+                    img
+                        width: 100%
             
             .about-text
 
@@ -463,6 +548,27 @@ footer .attribution a
 
                 button
                     width: 45%
+
+        
+
+        .expirience-list
+            .expirience-item
+                flex-direction: column
+                gap: 1rem                
+
+                .date
+                     justify-content: flex-start !important
+                     margin-bottom: 0.75rem
+
+                .timeline
+                    display: none
+                    
+                    .dot
+                        display: none
+
+                    .line
+                        display: none
+
 
         .about-skills
             padding: 1rem

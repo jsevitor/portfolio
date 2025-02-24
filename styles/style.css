@@ -7,6 +7,10 @@
   background: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0F0F0F;
   color: #EFEFEF;
@@ -184,6 +188,67 @@ main {
   background-color: #919191;
   color: #0F0F0F;
   cursor: pointer;
+}
+.about-container .about-expirience {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 0;
+}
+.about-container .about-expirience h3 {
+  padding: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #919191;
+}
+.about-container .about-expirience .expirience-list {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .about-expirience .expirience-list .expirience-item {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about-container .about-expirience .expirience-list .expirience-item .date {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.about-container .about-expirience .expirience-list .expirience-item .timeline {
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .about-expirience .expirience-list .expirience-item .timeline .dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #919191;
+}
+.about-container .about-expirience .expirience-list .expirience-item .timeline .line {
+  width: 1px;
+  height: 100%;
+  background-color: #919191;
+}
+.about-container .about-expirience .expirience-list .expirience-item .position {
+  flex: 1;
+  padding: 0 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about-container .about-expirience .expirience-list .expirience-item .position .position-company {
+  color: #919191;
+}
+.about-container .about-expirience .expirience-list .expirience-item .position .position-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 .about-container .about-skills {
   display: flex;
@@ -395,14 +460,20 @@ footer .attribution a {
   .about-container {
     padding: 0;
   }
+  .about-content .about-img {
+    align-items: center;
+  }
   .about-content img {
     width: 300px;
+  }
+  .about-content .about-text {
+    margin-left: 2rem;
   }
   .about-content .about-text p {
     font-size: 1rem;
   }
   .about-content .about-text button {
-    width: 60%;
+    width: 50% !important;
   }
   .projects-container .projects-content {
     display: flex;
@@ -418,6 +489,19 @@ footer .attribution a {
   .projects-container .projects-content .project-description ul li {
     font-size: 0.825rem;
     font-weight: 200;
+  }
+  .contact-container {
+    padding: 4rem 0;
+  }
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+  .contact-container .contact-content .contact-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    row-gap: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -478,11 +562,36 @@ footer .attribution a {
   .about-container .about-content .about-img {
     margin-bottom: 4rem;
   }
+  .about-container .about-content .about-img span {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .about-container .about-content .about-img span img {
+    width: 100%;
+  }
   .about-container .about-content .about-text p {
     font-size: 1rem;
   }
   .about-container .about-content .about-text button {
     width: 45%;
+  }
+  .about-container .expirience-list .expirience-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-container .expirience-list .expirience-item .date {
+    justify-content: flex-start !important;
+    margin-bottom: 0.75rem;
+  }
+  .about-container .expirience-list .expirience-item .timeline {
+    display: none;
+  }
+  .about-container .expirience-list .expirience-item .timeline .dot {
+    display: none;
+  }
+  .about-container .expirience-list .expirience-item .timeline .line {
+    display: none;
   }
   .about-container .about-skills {
     padding: 1rem;
