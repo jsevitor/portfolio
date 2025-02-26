@@ -81,16 +81,54 @@
                         color: variables.$dark_10
                         cursor: pointer
 
-.see-more-btn
-    margin-top: 3rem
-    padding: 0.5rem 1rem
-    border: 1px solid variables.$dark_40
-    border-radius: 0.2rem
-    color: variables.$dark_40
-    width: fit-content
-    justify-self: center
 
-    &:hover
-        background-color: variables.$dark_40
-        color: variables.$dark_10
-        cursor: pointer
+@media screen and (max-width: 768px) 
+    html 
+        font-size: 85%
+
+    // HEADER
+    .header-container
+        .menu
+            display: none
+
+        .header-content
+            nav
+                .menu
+                    display: none
+                    flex-direction: column
+                    width: 100%
+                    padding: 1rem 2rem
+                    position: absolute
+                    top: 100%
+                    left: 0
+                    background-color: variables.$dark_10
+                    border: 1px solid variables.$dark_40
+                    border-radius: 0.2rem
+                    z-index: 1
+
+                .menu_btns, .btn-menu
+                    display: block
+    
+    .projects-container
+        padding: 2rem 0
+
+        .proj-content 
+            .proj-card 
+                flex-direction: column
+
+                img 
+                    height: auto !important
+                
+
+                .proj-description 
+                    width: 100%
+                    padding: 1rem 0
+
+                    .proj-text 
+                        p 
+                            padding-right: 0
+                    
+                
+            
+        
+    

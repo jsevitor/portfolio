@@ -7,6 +7,10 @@
   background: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0F0F0F;
   color: #EFEFEF;
@@ -119,18 +123,43 @@ main {
   cursor: pointer;
 }
 
-.see-more-btn {
-  margin-top: 3rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid #EFEFEF;
-  border-radius: 0.2rem;
-  color: #EFEFEF;
-  width: -moz-fit-content;
-  width: fit-content;
-  justify-self: center;
-}
-.see-more-btn:hover {
-  background-color: #EFEFEF;
-  color: #0F0F0F;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+  .header-container .menu {
+    display: none;
+  }
+  .header-container .header-content nav .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0F0F0F;
+    border: 1px solid #EFEFEF;
+    border-radius: 0.2rem;
+    z-index: 1;
+  }
+  .header-container .header-content nav .menu_btns, .header-container .header-content nav .btn-menu {
+    display: block;
+  }
+  .projects-container {
+    padding: 2rem 0;
+  }
+  .projects-container .proj-content .proj-card {
+    flex-direction: column;
+  }
+  .projects-container .proj-content .proj-card img {
+    height: auto !important;
+  }
+  .projects-container .proj-content .proj-card .proj-description {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .projects-container .proj-content .proj-card .proj-description .proj-text p {
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=projects_styles.css.map */
